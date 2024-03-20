@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/app_navigation"
+    app:startDestination="@id/medalFragment">
+
+
+    <fragment
+        android:id="@+id/medalFragment"
+        android:name="com.example.baseproject.ui.medal.MedalFragment"
+        android:label="MedalFragment">
+        <action
+            android:id="@+id/action_to_restaurantFragment"
+            app:destination="@id/restaurantFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/restaurantFragment"
+        android:name="com.example.baseproject.ui.restaurent.RestaurantFragment"
+        android:label="RestaurantFragment">
+        <action
+            android:id="@+id/action_restaurantFragment_to_dishFragment"
+            app:destination="@id/dishFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/reviewFragment"
+        android:name="com.example.baseproject.ui.review.ReviewFragment"
+        android:label="ReviewFragment" />
+    <fragment
+        android:id="@+id/dishFragment"
+        android:name="com.example.baseproject.ui.dish.DishFragment"
+        android:label="DishFragment">
+        <action
+            android:id="@+id/action_dishFragment_to_reviewFragment"
+            app:destination="@id/reviewFragment" />
+    </fragment>
+</navigation>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_title_select_medal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please select a medal"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Spinner
+            android:id="@+id/spinner_medal"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_number_oder"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/tv_title_select_medal"
+            app:layout_constraintTop_toBottomOf="@id/tv_title_select_medal" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:src="@drawable/baseline_keyboard_arrow_down_24"
+            app:layout_constraintBottom_toBottomOf="@id/spinner_medal"
+            app:layout_constraintEnd_toEndOf="@id/spinner_medal"
+            app:layout_constraintTop_toTopOf="@id/spinner_medal" />
+
+        <TextView
+            android:id="@+id/tv_title_select_number_of_people"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Please enter number of People"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/spinner_medal" />
+
+        <TextView
+            android:id="@+id/edt_choose_number_people"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/bg_number_oder"
+            android:gravity="start|center"
+            android:paddingStart="8dp"
+            android:text="1"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/tv_title_select_number_of_people" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="@id/edt_choose_number_people"
+            app:layout_constraintEnd_toEndOf="@id/edt_choose_number_people"
+            app:layout_constraintTop_toTopOf="@id/edt_choose_number_people">
+
+            <ImageView
+                android:id="@+id/iv_increase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_up" />
+
+            <ImageView
+                android:id="@+id/iv_decrease"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_down" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_btn_next"
+            android:paddingHorizontal="40dp"
+            android:paddingVertical="10dp"
+            android:text="Next"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="@id/edt_choose_number_people"
+            app:layout_constraintTop_toBottomOf="@id/edt_choose_number_people" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

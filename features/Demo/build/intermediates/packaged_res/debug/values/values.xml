@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_content_setting">#AAAAAA</color>
+    <color name="color_green">#8CC152</color>
+    <color name="color_line_divide">#9CC8C7CC</color>
+    <color name="color_title_login">#DC1515</color>
+    <color name="color_title_setting">#999999</color>
+    <dimen name="defaultMargin_3_5x">30dp</dimen>
+    <dimen name="height_edt_login">55dp</dimen>
+    <dimen name="icon_login_size">55dp</dimen>
+    <dimen name="margin_title_setting">20dp</dimen>
+    <dimen name="radius_button_collaboration">25dp</dimen>
+</resources>
